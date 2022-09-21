@@ -1,0 +1,341 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    max-width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style: none;
+}
+
+#header .flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+#header img{
+    width: 70px;
+}
+
+#header h1{
+    margin-left: 10px;
+}
+
+#header ul{
+    display: flex;
+    justify-content: center;
+}
+
+#header li{
+    margin: 25px;
+}
+
+#header a{
+    color: #555;
+}
+
+#mainvisual{
+    background: linear-gradient(rgb(230, 230, 230), rgb(255, 255, 255));
+    text-align: center;
+    position: relative;
+    width: 100%;
+}
+
+#mainvisual img{
+    width: 70%;
+    margin: 60px;
+}
+
+#mainvisual a{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -ms-transform: translate(-50%,-50%);
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    padding: 3% 20%;
+    background-color: #fff;
+    font-size: 2rem;
+    white-space: nowrap;
+    font-family: serif;
+}
+
+#info{
+    width: 80%;
+    background-color: #FFFAD9;
+    margin: 0 auto;
+    padding: 5%;
+}
+
+#info h2{
+    border-left: solid 8px #91716a;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+#info li{
+    background-color: #fff;
+    margin-bottom: 10px;
+    padding: 30px;
+}
+
+#info .day{
+    color: #91716a;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+#info .news{
+    font-family: serif;
+}
+
+.icon{
+    display: flex;
+    justify-content: space-around;
+    margin: 30px 0;
+}
+
+.icon img{
+    width: 150px;
+}
+
+.vr{
+    margin-bottom: 50px;
+    width: 80%;
+    margin: 30px auto;
+}
+
+.vr p{
+    background-color: #FFFAD9;
+    width: 100%;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.contents{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+.contents::before{
+    content: "";
+    background: #eee;
+    width: 80%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.contents li{
+    display: flex;
+    align-items: center;
+    margin: 5%;
+    background-color: #fff;
+    border-radius: 15px;
+    width: 40%;
+}
+
+.contents img{
+    border-radius: 15px 0 0 15px;
+}
+
+.contents p{
+    font-size: 1rem;
+    margin: 0 auto;
+    font-weight: bold;
+    color: #91716a;
+    font-family: serif;
+}
+
+#guidance{
+    background-color: #FFFAD9;
+    padding: 5%;
+}
+
+#guidance h2{
+    border-left: solid 8px #91716a;
+    padding-left: 10px;
+    margin-bottom: 20px;
+}
+
+#guidance .flex{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff;
+    padding: 5%;
+}
+
+#guidance .left{
+    width: 50%;
+}
+
+#guidance .text{
+    margin-bottom: 30px;
+}
+
+#guidance .subject{
+    color: #91716a;
+    font-weight: bold;
+}
+
+#guidance .time{
+    font-family: serif;
+}
+
+#guidance .right{
+    width: 50%;
+}
+
+#guidance table{
+    border-collapse: collapse;
+    margin-bottom: 50px;
+    width: 100%;
+    font-size: 10px;
+}
+
+#guidance .week{
+    background-color: #91716a;
+    color: #fff;
+}
+
+#guidance th{
+    padding: 10px 0;
+}
+
+#guidance .after{
+    border-top: solid 2px #ddd;
+}
+
+#guidance .morning{
+    border-top: solid 2px #ddd;
+}
+
+#guidance td{
+    text-align: center;
+    padding: 10px 0;
+}
+
+iframe{
+    width: 100%;
+    height: 450px;
+}
+
+#footer{
+    margin: 150px 50px 50px 50px;
+}
+
+#footer ul{
+    display: flex;
+    margin-top: 50px;
+}
+
+#footer li{
+    padding: 0 10px;
+    border-left: solid 1px #555;
+}
+
+#footer .first{
+    border-style: none;
+}
+
+#footer a{
+    color: #555;
+}
+
+@media screen and (max-width:800px) {
+
+    #header .flex{
+        justify-content: left;
+        margin: 50px 30px;
+    }
+
+    #header ul{
+        display: none;
+    }
+
+    .vr{
+        width: 100%;
+        margin: 0;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+
+    #header .flex{
+        margin: 20px;
+    }
+
+    #header h1{
+        font-size: 1.1rem;
+    }
+    
+    #header img{
+        width: 50px;
+    }
+
+    #mainvisual a{
+        font-size: 1rem;
+    }
+
+    #info{
+        width: 90%;
+        margin: 0;
+    }
+
+    .vr{
+        width: 100%;
+        margin: 0;
+    }
+
+    .vr p{
+        height: 300px;
+    }
+
+    .contents{
+        display: block;
+    }
+
+    .contents li{
+        width:100%;
+        margin: 5% 0;
+    }
+
+    #guidance .flex{
+        display: block;
+    }
+
+    #guidance .left{
+        width: 100%;
+    }
+
+    #guidance .right{
+        width: 100%;
+    }
+
+    iframe{
+        height: 300px;
+    }
+
+    #footer ul{
+        flex-wrap: wrap;
+    }
+
+}
